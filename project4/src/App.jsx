@@ -1,9 +1,12 @@
-import React from 'react'
+import Cartoon from "./Component/Cartoon";
+import  {cartoons}  from "./utils/data";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <Cartoon superpower={"magnitude"} />
+    </div>
+  );
+};
 
-export default App
+export default App;
