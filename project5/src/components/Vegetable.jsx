@@ -5,16 +5,16 @@ const Vegetable = () => {
   const [show,setshow] = useState(false);
   return (
     <div>
-      <h1>Green Vegitable App </h1>
-      {vegetables.map((veget) => (
+      <h1>Green Vegetable App </h1>
+      {vegetables.map((vegetables) => (
         <div
           style={{
              backgroundColor:
-            show && veget.pickDate === "2023-03-30" ? "lightgreen" : "none",
+            show && vegetables.pickDate === "2023-03-30" ? "lightgreen" : "none",
           }}
-          key={veget.id}>
-          <h1> Name : {veget.name}</h1>
-          <h1> PickDate : {veget.pickDate}</h1>
+          key={vegetables.id}>
+          <h1> Name : {vegetables.name}</h1>
+          <h1> PickDate : {vegetables.pickDate}</h1>
         </div>
       ))}
       <button
